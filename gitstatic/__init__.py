@@ -1,8 +1,9 @@
 from flask import Flask, Response, redirect
 from git import Repo
 
-app = Flask('gitstatic')
-app.config.from_pyfile('config.cfg')
+app = Flask(__name__)
+app.config.from_envvar('GITSTATIC_CONF')
+
 repository_path = app.config.get('REPOSITORY_PATH')
 default_branch = app.config.get('BRANCH')
 
