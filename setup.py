@@ -15,7 +15,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='gitstatic',
-    version='0.0.6',
+    version='0.0.1',
     author='Timothy',
     author_email='ygmpkk@gmail.com',
     description='Git pages for hosting repository',
